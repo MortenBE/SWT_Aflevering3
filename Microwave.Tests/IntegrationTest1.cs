@@ -1,11 +1,11 @@
-﻿using System;
+using System;
 using MicrowaveOvenClasses.Boundary;
 using NUnit.Framework;
 using MicrowaveOvenClasses.Controllers;
 using MicrowaveOvenClasses.Interfaces;
 using NSubstitute;
 
-namespace Microwave.Test.Integration
+namespace Microwave.Test.Unit
 {
     
     [TestFixture]
