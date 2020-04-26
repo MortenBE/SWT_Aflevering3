@@ -9,7 +9,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Microwave.Test.Unit</RootNamespace>
-    <AssemblyName>Microwave.Tests.Unit</AssemblyName>
+    <AssemblyName>Microwave.Test.Unit</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <NuGetPackageImportStamp>
