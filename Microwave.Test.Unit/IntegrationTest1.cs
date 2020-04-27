@@ -95,11 +95,11 @@ namespace Microwave.Test.Unit
             _output.Received().OutputLine(Arg.Is<string>( str => 
                 str.Equals($"PowerTube works with {power}")));
 
-            _output.ClearReceivedCalls();
-            //OnTimerTick
-            _timer.TimerTick += Raise.Event();
-            Thread.Sleep(1000);
-            _output.Received().OutputLine($"Display shows: 00:59");
+            //_output.ClearReceivedCalls();
+            ////OnTimerTick
+            //_timer.TimerTick += Raise.Event();
+            //Thread.Sleep(1000);
+            //_output.Received(1).OutputLine("Display shows: 00:59");
            // _output.Received().OutputLine(Arg.Is<string>(str => str.Equals($"Display shows: 00:00")));
         }
     }
