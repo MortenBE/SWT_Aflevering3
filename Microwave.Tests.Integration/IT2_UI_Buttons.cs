@@ -119,7 +119,7 @@ namespace Microwave.Tests.Integration
         [TestCase(3, 1)]
         [TestCase(1, 2)]
         [TestCase(5, 5)]
-        public void StartCoocking_CheckCorrectTimeAndPower(int powerPressed, int timePressed)
+        public void StartCooking_CheckCorrectTimeAndPower(int powerPressed, int timePressed)
         {
             //Act
             for (int i = 0; i < powerPressed; i++)
@@ -138,7 +138,7 @@ namespace Microwave.Tests.Integration
         }
 
         [Test]
-        public void CancelCoocking()
+        public void CancelCooking()
         {
             //Act
             _powerButton.Press();
@@ -146,6 +146,7 @@ namespace Microwave.Tests.Integration
             _startCancelButton.Press();
             _startCancelButton.Press();
 
+            //Assert
             _cookController.Received().Stop();
         }
     }
